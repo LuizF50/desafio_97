@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labirinto do Encantador de Códigos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Labirinto do Encantador de Códigos</h1>
+        <div class="input-container">
+            <label for="labirinto">Insira o labirinto (formato JSON):</label>
+            <textarea id="labirinto" rows="8" placeholder="Exemplo: 
+[
+    ['#', '#', '#', '#', '#'],
+    ['#', 'S', '.', '.', '#'],
+    ['#', '#', '.', '#', '#'],
+    ['#', '.', '.', 'E', '#'],
+    ['#', '#', '#', '#', '#']
+]"></textarea>
+        </div>
+
+        <button class="btn" id="resolverBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Resolver Labirinto
+        </button>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+        <div class="result-container">
+            <h2>Caminho encontrado:</h2>
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

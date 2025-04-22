@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(5, 8, 1, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(3, 233, 244, 0.5);
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #03e9f4;
+  text-shadow: 0 0 10px rgba(3, 233, 244, 0.7);
+}
+
+.input-container {
+  margin-bottom: 1.5rem;
+}
+.input-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #03e9f4;
+}
+.input-container textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #03e9f4;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 150px;
+}
+.input-container textarea:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(3, 233, 244, 0.5);
+}
+
+.result-container {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(3, 233, 244, 0.1);
+  border-radius: 5px;
+  border: 1px solid #03e9f4;
+}
+.result-container h2 {
+  color: #03e9f4;
+  margin-bottom: 0.5rem;
+}
+.result-container #resultado {
+  min-height: 50px;
+  padding: 0.5rem;
+  word-break: break-all;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+}
+.btn:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3333333333));
+}
+.btn span {
+  position: absolute;
+  display: block;
+}
+.btn span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+.btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+.btn span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+.btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
